@@ -7,7 +7,7 @@ When(/^I run the site in guest mode$/) do
 end
 
 Then(/^the home page is displayed$/) do
-  uri = URI('https://www.picard.fr/')
+  uri = URI('https://demoqa.com/')
   res = Net::HTTP.get_response(uri)
   puts res.body if res.is_a?(Net::HTTPSuccess)
 end
